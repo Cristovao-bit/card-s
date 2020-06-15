@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "menulateral";
+  src:url("fonts/menulateral.eot");
+  src:url("fonts/menulateral.eot?#iefix") format("embedded-opentype"),
+    url("fonts/menulateral.woff") format("woff"),
+    url("fonts/menulateral.ttf") format("truetype"),
+    url("fonts/menulateral.svg#menulateral") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "menulateral" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "menulateral" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\61";
+}
+.icon-laptop:before {
+  content: "\62";
+}
+.icon-folder-open:before {
+  content: "\64";
+}
+.icon-grafics:before {
+  content: "\65";
+}
+.icon-font:before {
+  content: "\66";
+}
+.icon-calendar:before {
+  content: "\67";
+}
+.icon-location:before {
+  content: "\68";
+}
+.icon-info:before {
+  content: "\69";
+}
+.icon-power:before {
+  content: "\6a";
+}
+.icon-list:before {
+  content: "\6b";
+}
+.icon-bars:before {
+  content: "\63";
+}
+.icon-share-alt:before {
+  content: "\6c";
+}
+.icon-chevron-down:before {
+  content: "\6d";
+}
+.icon-chevron-left:before {
+  content: "\6e";
+}
+.icon-users:before {
+  content: "\6f";
+}
+.icon-user:before {
+  content: "\70";
+}
+.icon-cog:before {
+  content: "\71";
+}
+.icon-file-code-o:before {
+  content: "\72";
+}

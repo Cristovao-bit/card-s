@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{background: #000;}
+
+ul{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 150px;
+}
+
+ul li{
+	list-style: none;
+	position: absolute;
+	margin: -100px;
+	width: 200px;
+	height: 200px;
+	background: #000;
+	transform: rotate(45deg);
+	transition: .5s;
+	overflow: hidden;
+	opacity: .5;
+}
+
+ul li:hover{
+	opacity: 1;
+}
+
+ul .item1{
+	top: 0;
+	left: 0;
+}
+
+ul .item2{
+	bottom: 0;
+	left: 25%;
+}
+
+ul .item3{
+	top: 0;
+	left: 50%;
+}
+
+ul .item4{
+	bottom: 0;
+	left: 75%;
+}
+
+ul .item5{
+	top: 0;
+	left: 100%;
+}
+
+ul li .bg{
+	width: 100%;
+	height: 100%;
+	transform: rotate(-45deg) scale(1.42);
+}
+
+.item1 .bg{
+	background: url(../img/slider1.jpg) right center;
+	background-size: cover;
+}
+
+.item2 .bg{
+	background: url(../img/slider2.jpg) right center;
+	background-size: cover;
+}
+
+.item3 .bg{
+	background: url(../img/slider3.jpg) right center;
+	background-size: cover;
+}
+
+.item4 .bg{
+	background: url(../img/slider4.jpg) right center;
+	background-size: cover;
+}
+
+.item5 .bg{
+	background: url(../img/slider5.jpg) right center;
+	background-size: cover;
+}

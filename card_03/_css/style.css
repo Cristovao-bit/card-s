@@ -1,0 +1,118 @@
+/* 
+    Created on : 12/01/2019, 15:47:06
+    Author     : ML - Manutenção Lira
+*/
+
+.bg, .bg2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.bg{
+   -webkit-clip-path: polygon(69% 72%, 100% 15%, 100% 100%, 5% 100%);
+    clip-path: polygon(69% 72%, 100% 15%, 100% 100%, 5% 100%);
+    background: #000;
+}
+
+.bg2{
+   -webkit-clip-path: polygon(65% 69%, 100% 9%, 100% 100%, 5% 100%);
+    clip-path: polygon(65% 69%, 100% 9%, 100% 100%, 5% 100%);
+    background: #fbc02d;
+    z-index: -2;
+}
+.main{
+    position: relative;
+    z-index: 99;
+}
+
+.main_title{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 20px 0 5px 0;
+}
+
+.main_title::after{
+    content: '';
+    display: block;
+    width: 350px;
+    margin: 15px auto;
+    border-bottom: 1px solid #fbc02d;
+}
+
+.main_title h1{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.main_title p{
+    font-size: 0.875em;
+    margin-top: 5px;
+}
+
+.main_content_left{
+    float: left;
+    width: 50%;
+    margin: 80px 5% 0 5%;
+}
+
+.main_content_left h2{
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.main_content_left p{
+    font-size: 0.875em;
+}
+
+.main_content_right{
+    float: left;
+    width: 35%;
+    margin: 80px 5% 0 0;
+}
+
+.main_content_right ul{
+    z-index: 99;
+}
+
+.main_content_right ul li{
+    padding: 15px;
+    position: absolute;
+    border-radius: 10px;
+    transform: rotateY(-45deg) rotateX(20deg);
+    border-bottom: 4px solid rgba(0,0,0,0.2);
+    mix-blend-mode: multiply;
+}
+
+.main_content_right ul li:nth-child(1){
+    background-color: #bfe8fc;
+    z-index: 3;
+}
+
+.main_content_right ul li:nth-child(2){
+    background-color: #faffc8;
+    top: 275px;
+    z-index: 4;
+}
+
+.main_content_right ul li:nth-child(3){
+    background-color: rgba(242, 228, 255);
+    top: 368px;
+    z-index: 5;
+}
+
+.main_content_right ul li:hover{
+    transform: rotateY(-22deg) rotateX(7deg) scale(1.03);
+    transition: transform .4s ease-out;
+    mix-blend-mode: normal;
+}
+
+.main_content_right ul li span strong{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.main_content_right ul li span p{
+    font-size: 0.875em;
+}

@@ -1,0 +1,45 @@
+*,*:before, *:after{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Ubuntu', sans-serif;
+    
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{background: #262626;}
+
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 1200px;
+    background: #000;
+    display: flex;
+    box-shadow: 0 25px 30px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 25px 30px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 25px 30px rgba(0,0,0,0.5);
+}
+
+.content{
+    width: calc(50% - 50px);
+    height: 100%;
+    background: #000;
+    padding: 80px 50px;
+    color: #fff;
+}
+
+.imgBox{
+    width: calc(50% + 50px);
+    height: 100%;
+    background: #f00;
+    border-left: 100px solid #000;
+    border-bottom: 400px solid transparent;
+    background: url(../img/russa.jpg);
+    background-position: -100px -30px;
+    background-repeat: no-repeat;
+}

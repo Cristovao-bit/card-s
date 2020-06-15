@@ -1,0 +1,118 @@
+/* 
+    Created on : 11/01/2019, 19:13:51
+    Author     : ML - Manutenção Lira
+*/
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.container .box{
+    position: relative;
+    padding: 80px 40px 40px;
+    transition: 0.5s;
+    text-align: center;
+    background: #fff;
+}
+
+.container .box:hover{
+    background: #ff0057;
+}
+
+.box p{
+    transition: 0.5s;
+}
+
+.box h4{
+    margin: 20px 0 0;
+    transition: 0.5s;
+    font-size: 18px;
+    color: #ff0057;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.box h4 span{
+    font-weight: normal;
+    font-size: 14px;
+    color: #c5c5c5;
+    transition: 0.5s;
+}
+
+.box:hover p,
+.box:hover h4,
+.box:hover h4 span{
+    color: #fff;
+}
+
+.box .imgBox{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    overflow: hidden;
+}
+
+.box:before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    background: url(../_img/quotes.png);
+    background-size: cover;
+    opacity: 0.05;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.box:hover:before{
+    transform: translateY(-60px);
+    opacity: 1;
+}
+
+.box:after{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    background: url(../_img/quotes.png);
+    background-size: cover;
+    opacity: 0.05;
+    pointer-events: none;
+    transform: rotate(180deg) translateY(0px);
+    transition: 0.5s;
+}
+
+.box:hover:after{
+    transform: rotate(180deg) translateY(-60px);
+    opacity: 1;
+}
+
+@media (max-width: 768px){
+    .box{
+        margin-top: 80px;
+    }
+}

@@ -1,0 +1,90 @@
+/* 
+    Created on : 12/01/2019, 11:42:09
+    Author     : ML - Manutenção Lira
+*/
+
+.container{
+    padding: 100px 0;
+    background: #9e02c5;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+}
+
+.preci_content{
+    width: 70%;
+    margin: 0 15%;
+}
+
+.preci_card{
+    text-align: center;
+    background: #fff;
+    box-shadow: inset 0 0 40px rgba(0,0,0,0.2), 0 20px 50px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+
+.preci_card:nth-child(2){
+    transform: scale(1.1);
+}
+
+.preci_card .preci_title{
+    padding: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: linear-gradient(45deg, #f321d6, #5121f3);
+}
+
+.preci_card .preci_title h4{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+
+.preci_card .preci_title h2{
+    padding: 20px 0 0;
+    font-size: 36px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.preci_card_content{
+    position: relative;
+}
+
+.preci_card_content ul{
+    position: relative;
+    padding: 20px 0 0;
+}
+
+.preci_card_content ul li{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: #777;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.preci_card_content ul li:hover{
+    color: #000;
+    border-left: 15px solid #9e02c5;
+    border-right: 15px solid #9e02c5;
+}
+
+.preci_button{
+    padding: 15px;
+}
+
+.preci_button .btn{
+    text-transform: uppercase;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+}
